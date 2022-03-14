@@ -1,0 +1,46 @@
+nav {
+  font-size: 1.5rem;
+  display: flex;
+  height: 3rem;
+  //   background-color: $color-3;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a:not(:first-child) {
+    margin-left: 3rem;
+  }
+  &-expanded {
+    display: none;
+    @include mq("sm") {
+      display: flex;
+    }
+  }
+}
+
+svg {
+  width: 32px;
+  height: 32px;
+}
+
+.hamburger {
+  stroke: $color-4;
+}
+
+a {
+  color: $color-4;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: $color-4;
+  }
+}

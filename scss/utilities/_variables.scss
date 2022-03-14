@@ -1,0 +1,18 @@
+// Colors
+$color-1: #202531;
+$color-shadow: #181c25;
+$color-2: #afaab9;
+$color-3: #3847b0;
+$color-4: #089098;
+$color-4-glow: rgba(8, 144, 152, 0.2);
+$color-5: #e20076;
+$color-5-glow: rgba(226, 0, 118, 0.2);
+$color-6: #102542;
+
+// Breakpoints
+$breakpoints: (
+  "xs": 575px,
+  "sm": 576px,
+  "med": 768px,
+  "lg": 990px,
+);

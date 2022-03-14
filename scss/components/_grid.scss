@@ -1,0 +1,39 @@
+.headline {
+  max-width: 500px;
+  margin: 5rem auto 0;
+  @include mq("xs") {
+    display: flex;
+    flex-direction: column;
+
+    // align-items: center;
+    // text-align: center;
+  }
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  //   margin-top: 5rem;
+  max-height: 0;
+  background-color: black;
+  transition: max-height 2s ease-out;
+  overflow: hidden;
+  //   &::before {
+  //     content: "<section>";
+  //     position: fixed;
+  //   }
+  //   &::after {
+  //     content: "</section>";
+  //     position: fixed;
+  //   }
+  //   &:hover {
+  //     max-height: 500px;
+  //     transition: max-height 2s ease-out;
+  //   }
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}

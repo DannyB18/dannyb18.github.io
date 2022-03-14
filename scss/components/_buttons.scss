@@ -1,0 +1,20 @@
+button {
+  background-color: initial;
+  border: none;
+  padding: 5px 0;
+}
+
+.cta {
+  font-size: 1.5rem;
+  color: $color-5;
+  padding: 1.5rem;
+  border: 2px solid $color-5;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0 0 0.3rem 0.3rem $color-5-glow,
+    inset 0 0 0.3rem 0.3rem $color-5-glow;
+  &:hover {
+    color: $color-2;
+    background-color: $color-5;
+  }
+}
