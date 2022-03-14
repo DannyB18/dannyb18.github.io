@@ -1,15 +1,23 @@
 nav {
   font-size: 1.5rem;
-  display: flex;
   height: 3rem;
-  //   background-color: $color-3;
   align-items: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  //   background-color: $color-3;
 }
 
 .logo {
   font-size: 2rem;
   font-weight: bold;
   margin-right: auto;
+  a {
+    color: $color-4;
+  }
 }
 
 .nav-items {
@@ -30,6 +38,9 @@ nav {
 svg {
   width: 32px;
   height: 32px;
+  @include mq("sm") {
+    display: none;
+  }
 }
 
 .hamburger {
@@ -37,7 +48,7 @@ svg {
 }
 
 a {
-  color: $color-4;
+  color: $color-2;
   cursor: pointer;
   text-decoration: none;
   &:hover {

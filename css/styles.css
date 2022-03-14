@@ -420,9 +420,8 @@ body {
 }
 
 h1 {
-  max-width: 100%;
-  font-size: 5rem;
-  font-weight: bold;
+  margin: 0;
+  font-size: calc(4.5rem + 1.3vw);
   text-shadow: 5px 5px 3px #181c25;
 }
 @media (max-width: 575px) {
@@ -437,6 +436,8 @@ nav h2 {
 }
 
 .intro {
+  font-size: calc(1.3rem + 0.6vw);
+  margin: 0;
   color: #afaab9;
   text-shadow: 3px 3px 1px #181c25;
 }
@@ -446,7 +447,7 @@ nav h2 {
 }
 
 .headline {
-  max-width: 500px;
+  max-width: fit-content;
   margin: 5rem auto 0;
 }
 @media (max-width: 575px) {
@@ -454,6 +455,10 @@ nav h2 {
     display: flex;
     flex-direction: column;
   }
+}
+
+.container {
+  padding: 0 1rem;
 }
 
 section {
@@ -473,15 +478,23 @@ section {
 
 nav {
   font-size: 1.5rem;
-  display: flex;
   height: 3rem;
   align-items: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .logo {
   font-size: 2rem;
   font-weight: bold;
   margin-right: auto;
+}
+.logo a {
+  color: #089098;
 }
 
 .nav-items {
@@ -505,13 +518,18 @@ svg {
   width: 32px;
   height: 32px;
 }
+@media (min-width: 576px) {
+  svg {
+    display: none;
+  }
+}
 
 .hamburger {
   stroke: #089098;
 }
 
 a {
-  color: #089098;
+  color: #afaab9;
   cursor: pointer;
   text-decoration: none;
 }

@@ -13,9 +13,8 @@ body {
 }
 
 h1 {
-  max-width: 100%;
-  font-size: 5rem;
-  font-weight: bold;
+  margin: 0;
+  font-size: calc(4.5rem + 1.3vw);
   text-shadow: 5px 5px 3px $color-shadow;
   @include mq("xs") {
     font-size: 3rem;
@@ -28,6 +27,8 @@ nav h2 {
 }
 
 .intro {
+  font-size: calc(1.3rem + 0.6vw);
+  margin: 0;
   color: $color-2;
   text-shadow: 3px 3px 1px $color-shadow;
 }
