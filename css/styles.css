@@ -415,7 +415,7 @@ ul {
 body {
   font-family: "Nunito Sans", sans-serif;
   background-color: #202531;
-  color: #089098;
+  color: #06aed5;
   height: 0;
 }
 
@@ -432,7 +432,7 @@ h1 {
 
 nav h2 {
   font-family: "Abel", sans-serif;
-  color: #089098;
+  color: #06aed5;
 }
 
 .intro {
@@ -465,10 +465,43 @@ section {
   position: relative;
   display: flex;
   justify-content: center;
-  max-height: 0;
-  background-color: black;
-  transition: max-height 2s ease-out;
-  overflow: hidden;
+  margin-top: 5rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #30384b;
+  width: 90%;
+  max-width: 1600px;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.12), inset 0 2px 2px rgba(0, 0, 0, 0.12), inset 0 4px 4px rgba(0, 0, 0, 0.12), inset 0 8px 8px rgba(0, 0, 0, 0.12), inset 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project-area {
+  display: grid;
+  grid-template-columns: minmax(308px, auto);
+  grid-template-rows: repeat(6, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin: 0 1rem;
+}
+@media (min-width: 768px) {
+  .project-area {
+    margin: 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (min-width: 990px) {
+  .project-area {
+    margin: 0 3rem;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 .centered {
@@ -494,7 +527,7 @@ nav {
   margin-right: auto;
 }
 .logo a {
-  color: #089098;
+  color: #06aed5;
 }
 
 .nav-items {
@@ -525,7 +558,7 @@ svg {
 }
 
 .hamburger {
-  stroke: #089098;
+  stroke: #06aed5;
 }
 
 a {
@@ -534,7 +567,33 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #089098;
+  color: #06aed5;
+}
+
+.card {
+  color: #afaab9;
+  width: 100%;
+  background: #282f3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+.card h3 {
+  color: #f7f052;
+}
+
+.card-trim {
+  height: 8px;
+  width: 100%;
+  background-color: #f7f052;
+  border-radius: 8px 8px 0 0;
+}
+
+.thumb {
+  width: 100%;
+  max-width: 750px;
 }
 
 button {
@@ -545,16 +604,16 @@ button {
 
 .cta {
   font-size: 1.5rem;
-  color: #e20076;
+  color: #ed217c;
   padding: 1.5rem;
-  border: 2px solid #e20076;
+  border: 2px solid #ed217c;
   border-radius: 10px;
   margin-top: 2rem;
   box-shadow: 0 0 0.3rem 0.3rem rgba(226, 0, 118, 0.2), inset 0 0 0.3rem 0.3rem rgba(226, 0, 118, 0.2);
 }
 .cta:hover {
   color: #afaab9;
-  background-color: #e20076;
+  background-color: #ed217c;
 }
 
 /*# sourceMappingURL=styles.css.map */

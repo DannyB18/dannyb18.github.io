@@ -1,14 +1,20 @@
 // Colors
 $color-1: #202531;
-$color-shadow: #181c25;
+$color-1-light: #282f3e;
+$color-1-lighter: #30384b;
+$color-1-shadow: #181c25;
+$shadow: rgba(0, 0, 0, 0.12);
 $color-2: #afaab9;
 $color-3: #3847b0;
-$color-4: #089098;
+$color-4: #06aed5;
 $color-4-glow: rgba(8, 144, 152, 0.2);
-$color-5: #e20076;
+$color-5: #ed217c;
 $color-5-glow: rgba(226, 0, 118, 0.2);
 $color-6: #102542;
+$color-7: #f7f052;
 
+// Old Colors
+$color-4-old: #089098;
 // Breakpoints
 $breakpoints: (
   "xs": 575px,

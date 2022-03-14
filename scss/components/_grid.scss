@@ -15,23 +15,40 @@ section {
   position: relative;
   display: flex;
   justify-content: center;
-  //   margin-top: 5rem;
-  max-height: 0;
-  background-color: black;
-  transition: max-height 2s ease-out;
-  overflow: hidden;
-  //   &::before {
-  //     content: "<section>";
-  //     position: fixed;
-  //   }
-  //   &::after {
-  //     content: "</section>";
-  //     position: fixed;
-  //   }
-  //   &:hover {
-  //     max-height: 500px;
-  //     transition: max-height 2s ease-out;
-  //   }
+  margin-top: 5rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-1-lighter;
+  width: 90%;
+  max-width: 1600px;
+  border-radius: 10px;
+  @include inset;
+}
+
+.project-area {
+  display: grid;
+  // grid-template-columns: repeat(autofit, minmax(308px, 540px));
+  grid-template-columns: minmax(308px, auto);
+  grid-template-rows: repeat(6, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin: 0 1rem;
+  @include mq("med") {
+    margin: 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  @include mq("lg") {
+    margin: 0 3rem;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 .centered {
