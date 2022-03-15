@@ -5,7 +5,8 @@ button {
 }
 
 .cta {
-  width: 20rem;
+  width: 22rem;
+  cursor: pointer;
   text-align: center;
   font-size: 1.5rem;
   color: $color-5;
@@ -21,7 +22,64 @@ button {
     background-color: $color-5;
   }
   @include mq("xs") {
-    width: 15rem;
+    width: 17rem;
     font-size: 1.1rem;
   }
+}
+
+#projects-button {
+  @include mq("lg") {
+    margin-top: 0;
+  }
+}
+
+.button-group {
+  position: relative;
+}
+
+.info-button {
+  position: absolute;
+  opacity: 0;
+}
+
+.call {
+  top: 5.2rem;
+  z-index: -1;
+}
+
+.email {
+  top: 11rem;
+  z-index: -2;
+}
+
+.show-call {
+  transition: top 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36),
+    opacity 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36);
+  top: 11rem;
+  opacity: 100;
+  z-index: 0;
+}
+
+.show-email {
+  transition: top 0.3s 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36),
+    opacity 0.2s 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36);
+  top: 16.7rem;
+  opacity: 100;
+  z-index: 0;
+}
+
+.hide-call {
+  transition: top 0.2s 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36),
+    opacity 0.1s 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36);
+  top: 5.2rem;
+  z-index: -1;
+  opacity: 0;
+}
+
+.hide-email {
+  transition: top 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36),
+    opacity 0.1s cubic-bezier(0.74, 0.74, 0.56, 1.36);
+  top: 11rem;
+  z-index: -2;
+  opacity: 0;
 }
