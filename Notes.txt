@@ -1,10 +1,3 @@
 Notes to Continue:
 
-Contact buttons misaligned in smaller viewports
-This is due to font-size and added top margin on first button
-
-To fix this,
-First, add the top margin to the button container instead of button
-at smaller viewports.
-Then, create mediaqueries for the contact buttons and change the top
-property appropriately
+Set hrefs for a tags (need project card links)

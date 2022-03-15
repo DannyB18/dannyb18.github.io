@@ -464,7 +464,7 @@ body {
 }
 
 main {
-  max-width: 1800px;
+  max-width: 1600px;
   margin: auto;
 }
 
@@ -678,49 +678,118 @@ button {
 
 .button-group {
   position: relative;
+  margin-top: 3rem;
+}
+@media (min-width: 990px) {
+  .button-group {
+    margin-top: 0;
+  }
 }
 
 .info-button {
   position: absolute;
   opacity: 0;
 }
+.info-button .cta {
+  margin: 0;
+}
 
 .call {
-  top: 5.2rem;
+  top: 8.8rem;
   z-index: -1;
+}
+@media (min-width: 768px) {
+  .call {
+    top: 9.2rem;
+  }
+}
+@media (min-width: 990px) {
+  .call {
+    top: 7.2rem;
+  }
 }
 
 .email {
-  top: 11rem;
+  top: 14rem;
   z-index: -2;
+}
+@media (min-width: 768px) {
+  .email {
+    top: 15rem;
+  }
+}
+@media (min-width: 990px) {
+  .email {
+    top: 13rem;
+  }
 }
 
 .show-call {
   transition: top 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36), opacity 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36);
-  top: 11rem;
+  top: 14rem;
   opacity: 100;
   z-index: 0;
+}
+@media (min-width: 768px) {
+  .show-call {
+    top: 15rem;
+  }
+}
+@media (min-width: 990px) {
+  .show-call {
+    top: 13rem;
+  }
 }
 
 .show-email {
   transition: top 0.3s 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36), opacity 0.2s 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36);
-  top: 16.7rem;
+  top: 19.2rem;
   opacity: 100;
   z-index: 0;
+}
+@media (min-width: 768px) {
+  .show-email {
+    top: 20.8rem;
+  }
+}
+@media (min-width: 990px) {
+  .show-email {
+    top: 18.7rem;
+  }
 }
 
 .hide-call {
   transition: top 0.2s 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36), opacity 0.1s 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36);
-  top: 5.2rem;
+  top: 8.8rem;
   z-index: -1;
   opacity: 0;
+}
+@media (min-width: 768px) {
+  .hide-call {
+    top: 9.2rem;
+  }
+}
+@media (min-width: 990px) {
+  .hide-call {
+    top: 7.2rem;
+  }
 }
 
 .hide-email {
   transition: top 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36), opacity 0.1s cubic-bezier(0.74, 0.74, 0.56, 1.36);
-  top: 11rem;
+  top: 14rem;
   z-index: -2;
   opacity: 0;
+}
+@media (min-width: 768px) {
+  .hide-email {
+    top: 15rem;
+  }
+}
+@media (min-width: 990px) {
+  .hide-email {
+    top: 13rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

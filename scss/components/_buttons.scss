@@ -35,51 +35,94 @@ button {
 
 .button-group {
   position: relative;
+  margin-top: 3rem;
+  @include mq("lg") {
+    margin-top: 0;
+  }
 }
 
 .info-button {
   position: absolute;
   opacity: 0;
+  & .cta {
+    margin: 0;
+  }
 }
 
 .call {
-  top: 5.2rem;
+  top: 8.8rem;
   z-index: -1;
+  @include mq("med") {
+    top: 9.2rem;
+  }
+  @include mq("lg") {
+    top: 7.2rem;
+  }
 }
 
 .email {
-  top: 11rem;
+  top: 14rem;
   z-index: -2;
+  @include mq("med") {
+    top: 15rem;
+  }
+  @include mq("lg") {
+    top: 13rem;
+  }
 }
 
 .show-call {
   transition: top 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36),
     opacity 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36);
-  top: 11rem;
+  top: 14rem;
   opacity: 100;
   z-index: 0;
+  @include mq("med") {
+    top: 15rem;
+  }
+  @include mq("lg") {
+    top: 13rem;
+  }
 }
 
 .show-email {
   transition: top 0.3s 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36),
     opacity 0.2s 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36);
-  top: 16.7rem;
+  top: 19.2rem;
   opacity: 100;
   z-index: 0;
+  @include mq("med") {
+    top: 20.8rem;
+  }
+  @include mq("lg") {
+    top: 18.7rem;
+  }
 }
 
 .hide-call {
   transition: top 0.2s 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36),
     opacity 0.1s 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36);
-  top: 5.2rem;
+  top: 8.8rem;
   z-index: -1;
   opacity: 0;
+  @include mq("med") {
+    top: 9.2rem;
+  }
+  @include mq("lg") {
+    top: 7.2rem;
+  }
 }
 
 .hide-email {
   transition: top 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36),
     opacity 0.1s cubic-bezier(0.74, 0.74, 0.56, 1.36);
-  top: 11rem;
+  top: 14rem;
   z-index: -2;
   opacity: 0;
+  @include mq("med") {
+    top: 15rem;
+  }
+  @include mq("lg") {
+    top: 13rem;
+  }
 }
