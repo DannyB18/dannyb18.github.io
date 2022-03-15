@@ -4,12 +4,11 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
+  background-color: $color-1;
+  color: $color-4;
   //   background: url("../../img/peakpx.jpg") no-repeat $color-1;
   //   background-blend-mode: multiply;
   //   padding: 0 1rem;
-  background-color: $color-1;
-  color: $color-4;
-  height: 0;
 }
 
 h1 {
@@ -17,8 +16,17 @@ h1 {
   font-size: calc(4.5rem + 1.3vw);
   text-shadow: 5px 5px 3px $color-1-shadow;
   @include mq("xs") {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
+}
+
+h2 {
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 nav h2 {
@@ -31,6 +39,9 @@ nav h2 {
   margin: 0;
   color: $color-2;
   text-shadow: 3px 3px 1px $color-1-shadow;
+  @include mq("xxs") {
+    font-size: 1.2rem;
+  }
 }
 
 .hidden {

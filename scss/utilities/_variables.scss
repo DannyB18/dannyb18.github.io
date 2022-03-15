@@ -12,13 +12,17 @@ $color-5: #ed217c;
 $color-5-glow: rgba(226, 0, 118, 0.2);
 $color-6: #102542;
 $color-7: #f7f052;
+$color-dark: #101319;
 
 // Old Colors
 $color-4-old: #089098;
 // Breakpoints
 $breakpoints: (
+  "xxs": 374px,
   "xs": 575px,
   "sm": 576px,
+  "sm-md": 730px,
   "med": 768px,
   "lg": 990px,
+  "xl": 1024,
 );

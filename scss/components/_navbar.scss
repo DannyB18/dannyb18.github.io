@@ -8,7 +8,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  //   background-color: $color-3;
+  // background-color: $color-dark;
 }
 
 .logo {
@@ -29,7 +29,7 @@ nav {
   }
   &-expanded {
     display: none;
-    @include mq("sm") {
+    @include mq("sm-md") {
       display: flex;
     }
   }
@@ -38,7 +38,7 @@ nav {
 svg {
   width: 32px;
   height: 32px;
-  @include mq("sm") {
+  @include mq("sm-md") {
     display: none;
   }
 }
@@ -51,6 +51,7 @@ a {
   color: $color-2;
   cursor: pointer;
   text-decoration: none;
+  transition: color 0.3s ease-out;
   &:hover {
     color: $color-4;
   }

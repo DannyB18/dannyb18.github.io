@@ -11,94 +11,143 @@
     <title>Danny Bravo's Web Dev Portfolio</title>
 </head>
 <body>
-    <nav>
-        <div class="navbar container">
+        <nav>
+            <div class="navbar container">
 
-            <div class="logo">
-                <a>&#60;DB&#62;</a>
-            </div>
+                <div class="logo">
+                    <a href="/index.html">&#60;DB&#62;</a>
+                </div>
 
-            <div class="nav-items">
+                <div class="nav-items">
 
-                <button>
-                    <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewbox="0 2 24 24"><path class="hamburger" d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#1040e2"/><path class="hamburger" d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"/></svg>
-                </button>
+                    <button>
+                        <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewbox="0 2 24 24"><path class="hamburger" d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#1040e2"/><path class="hamburger" d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"/></svg>
+                    </button>
 
-                <div class="nav-items nav-items-expanded">
-                    <a>About</a>
-                    <a href="#projects">Projects</a>
-                    <a>Skills</a>
-                    <a>Resume</a>
+                    <div class="nav-items nav-items-expanded">
+                        <a href="/index.html">Home</a>
+                        <a>About</a>
+                        <a href="#projects">Projects</a>
+                        <a>Skills</a>
+                        <a>Resume</a>
+                    </div>
+
                 </div>
 
             </div>
+        </nav>
 
-        </div>
-    </nav>
+        <main>
 
-    <div class="headline container">
-        <p class="intro">Hello, my name is</p>
-        <h1 class="m-0">Danny Bravo</h1>
-        <p class="intro">I'm a front-end web developer</p>
-    </div>
+        <div class="landing-page">
+            <div class="headline">
+                <p class="intro">Hello, my name is</p>
+                <h1 class="m-0">Danny Bravo</h1>
+                <p class="intro">I'm a front-end web developer</p>
+            </div>
 
-    <div class="centered">
-        <a class="cta"><strong>Contact</strong> me!</a>
-    </div>
+            <div class="button-group">
 
-    <div class="centered">
-        <a class="cta">Check out my <strong>projects</strong></a>
-    </div>
-
-    <section id="projects">
-        <div class="projects">
-            <h2>Projects</h2>
-            <div class="project-area">
-
-                <div class="card">
-                    <div class="card-trim"></div>
-                    <div class="card-header">
-                        <h3>WebApp Dashboard</h3>
-                    </div>
-                    <img class="thumb" src="img/webapp-thumb.png" alt="WebApp Dashboard thumbnail">
-                    <div class="text-container">
-                        <p>An interactive WebApp Dashboard.</p>
-                        <p>This project uses interactive JavaScript to change the contents of the webpage, all while looking great in all viewport widths.</p>
-                    </div>
+                <div class="centered">
+                    <a class="cta" href="pages/projects.html">Check out my <strong>projects</strong></a>
                 </div>
 
-
-                <div class="card">
-                    <div class="card-trim"></div>
-                    <div class="card-header">
-                        <h3>Employee Directory</h3>
-                    </div>
-                    <img class="thumb" src="img/employeedirect-thumb.png" alt="Employee Directory thumbnail">
-                    <div class="text-container">
-                        <p>An interactive WebApp Dashboard.</p>
-                        <p>This project displays the ability to use the fetch API to retrieve user data while using JSON to Parse the data and injecting the information onto the web page with JavaScript</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-trim"></div>
-                    <div class="card-header">
-                        <h3>Photo Gallery</h3>
-                    </div>
-                    <img class="thumb" src="img/photogal-thumb.png" alt="Photo Gallery thumbnail">
-                    <div class="text-container">
-                        <p>An interactive WebApp Dashboard.</p>
-                        <p>This project displays the ability to use the fetch API to retrieve user data while using JSON to Parse the data and injecting the information onto the web page with JavaScript</p>
-                    </div>
+                <div class="centered">
+                    <button class="cta"><strong>Contact</strong> me!</button>
                 </div>
 
             </div>
         </div>
-    </section>
 
-    <section>
-        <h2>Skills</h2>
-    </section>
-    
+        <section>
+            <h2>About Me</h2>
+        </section>
+
+        <section id="projects">
+            <div class="projects">
+                <h2>Projects</h2>
+                <div class="project-area">
+
+                    <a class="card">
+                        <div class="card-trim"></div>
+                        <div class="card-header">
+                            <h3>WebApp Dashboard</h3>
+                        </div>
+                        <img class="thumb" src="/img/webapp-thumb.png" alt="WebApp Dashboard thumbnail">
+                        <div class="text-container">
+                            <p>An interactive WebApp Dashboard.</p>
+                            <p>This project uses interactive JavaScript to change the contents of the webpage, all while looking great in all viewport widths.</p>
+                        </div>
+                    </a>
+
+
+                    <a class="card">
+                        <div class="card-trim"></div>
+                        <div class="card-header">
+                            <h3>Employee Directory</h3>
+                        </div>
+                        <img class="thumb" src="/img/employeedirect-thumb.png" alt="Employee Directory thumbnail">
+                        <div class="text-container">
+                            <p>An interactive WebApp Dashboard.</p>
+                            <p>This project displays the ability to use the fetch API to retrieve user data while using JSON to Parse the data and injecting the information onto the web page with JavaScript</p>
+                        </div>
+                    </a>
+
+                    <a class="card">
+                        <div class="card-trim"></div>
+                        <div class="card-header">
+                            <h3>Photo Gallery</h3>
+                        </div>
+                        <img class="thumb" src="/img/photogal-thumb.png" alt="Photo Gallery thumbnail">
+                        <div class="text-container">
+                            <p>An interactive WebApp Dashboard.</p>
+                            <p>This project displays the ability to use the fetch API to retrieve user data while using JSON to Parse the data and injecting the information onto the web page with JavaScript</p>
+                        </div>
+                    </a>
+
+                    <a class="card">
+                        <div class="card-trim"></div>
+                        <div class="card-header">
+                            <h3>Wheel of Success Game</h3>
+                        </div>
+                        <img class="thumb" src="/img/photogal-thumb.png" alt="Photo Gallery thumbnail">
+                        <div class="text-container">
+                            <p>An interactive WebApp Dashboard.</p>
+                            <p>This project displays the ability to use the fetch API to retrieve user data while using JSON to Parse the data and injecting the information onto the web page with JavaScript</p>
+                        </div>
+                    </a>
+
+                    <a class="card">
+                        <div class="card-trim"></div>
+                        <div class="card-header">
+                            <h3>Sign-up Form</h3>
+                        </div>
+                        <img class="thumb" src="/img/photogal-thumb.png" alt="Photo Gallery thumbnail">
+                        <div class="text-container">
+                            <p>An interactive WebApp Dashboard.</p>
+                            <p>This project displays the ability to use the fetch API to retrieve user data while using JSON to Parse the data and injecting the information onto the web page with JavaScript</p>
+                        </div>
+                    </a>
+
+                    <a class="card">
+                        <div class="card-trim"></div>
+                        <div class="card-header">
+                            <h3>Photo Gallery</h3>
+                        </div>
+                        <img class="thumb" src="/img/photogal-thumb.png" alt="Photo Gallery thumbnail">
+                        <div class="text-container">
+                            <p>An interactive WebApp Dashboard.</p>
+                            <p>This project displays the ability to use the fetch API to retrieve user data while using JSON to Parse the data and injecting the information onto the web page with JavaScript</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+        </section>
+    </main>
 </body>
 </html>

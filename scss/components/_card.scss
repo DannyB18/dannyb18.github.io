@@ -6,9 +6,21 @@
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
+  transition: transform 0.3s;
+
   @include shadow;
   h3 {
     color: $color-7;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .text-container {
+    margin: 0 1rem;
+  }
+  &:hover {
+    transform: scale(107%);
+    color: $color-2;
   }
 }
 
