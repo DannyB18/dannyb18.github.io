@@ -484,9 +484,6 @@ main {
     margin-bottom: 45vh;
   }
 }
-.landing-page img {
-  border-radius: 8px;
-}
 
 .container {
   padding: 0 1rem;
@@ -499,7 +496,7 @@ section {
   margin-top: 5rem;
 }
 
-.projects {
+.section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -579,12 +576,12 @@ nav {
   }
 }
 
-svg {
+.menu {
   width: 32px;
   height: 32px;
 }
 @media (min-width: 730px) {
-  svg {
+  .menu {
     display: none;
   }
 }
@@ -614,6 +611,10 @@ a:hover {
   transition: transform 0.3s;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
 }
+.card svg {
+  width: 100%;
+  height: 100%;
+}
 .card h3 {
   color: #f7f052;
 }
@@ -634,10 +635,37 @@ a:hover {
   background-color: #f7f052;
   border-radius: 8px 8px 0 0;
 }
+.card-trim-html {
+  background-color: #f16529;
+}
+.card-trim-css {
+  background-color: #33a9dc;
+}
+.card-trim-js {
+  background-color: #f0db4f;
+}
+.card-trim-git {
+  background-color: #f34f29;
+}
+.card-trim-sass {
+  background-color: #cb6699;
+}
+.card-trim-bs {
+  background-color: #8c0bfb;
+}
 
 .thumb {
   width: 100%;
   max-width: 750px;
+}
+
+.skill-icon {
+  max-width: 15rem;
+  margin-top: 1rem;
+}
+
+.svg-text {
+  fill: #afaab9;
 }
 
 button {
