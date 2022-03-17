@@ -26,26 +26,67 @@
     color: $color-2;
   }
   &-skill {
+    transition: box-shadow 0.3s ease-out;
+    h3 {
+      color: $color-2;
+      font-family: "Fira Code", monospace;
+    }
     &:hover {
       transform: none;
     }
-    &-html:hover {
-      @include shadow($color-html-glow);
+
+    &-html {
+      span {
+        color: $color-html-light;
+      }
+      &:hover {
+        @include shadow($color-html-glow);
+      }
     }
-    &-css:hover {
-      @include shadow($color-css-glow);
+
+    &-css {
+      span {
+        color: $color-css-light;
+      }
+      &:hover {
+        @include shadow($color-css-glow);
+      }
     }
-    &-js:hover {
-      @include shadow($color-js-glow);
+
+    &-js {
+      span {
+        color: $color-js;
+      }
+      &:hover {
+        @include shadow($color-js-glow);
+      }
     }
-    &-git:hover {
-      @include shadow($color-git-glow);
+
+    &-git {
+      span {
+        color: $color-git;
+      }
+      &:hover {
+        @include shadow($color-git-glow);
+      }
     }
-    &-sass:hover {
-      @include shadow($color-sass-glow);
+
+    &-sass {
+      span {
+        color: $color-sass;
+      }
+      &:hover {
+        @include shadow($color-sass-glow);
+      }
     }
-    &-bs:hover {
-      @include shadow($color-bs-glow);
+
+    &-bs {
+      span {
+        color: $color-bs-light;
+      }
+      &:hover {
+        @include shadow($color-bs-glow);
+      }
     }
   }
 }
