@@ -25,13 +25,37 @@
     transform: scale(107%);
     color: $color-2;
   }
+  &-skill {
+    &:hover {
+      transform: none;
+    }
+    &-html:hover {
+      @include shadow($color-html-glow);
+    }
+    &-css:hover {
+      @include shadow($color-css-glow);
+    }
+    &-js:hover {
+      @include shadow($color-js-glow);
+    }
+    &-git:hover {
+      @include shadow($color-git-glow);
+    }
+    &-sass:hover {
+      @include shadow($color-sass-glow);
+    }
+    &-bs:hover {
+      @include shadow($color-bs-glow);
+    }
+  }
 }
 
 .card-trim {
-  height: 8px;
+  //   height: 8px;
   width: 100%;
   background-color: $color-7;
   border-radius: 8px 8px 0 0;
+  padding-bottom: 8px;
   &-html {
     background-color: $color-html-light;
   }
@@ -58,7 +82,7 @@
 }
 
 .skill-icon {
-  max-width: 15rem;
+  max-width: 10rem;
   margin-top: 1rem;
 }
 
