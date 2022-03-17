@@ -470,18 +470,18 @@ main {
 
 .landing-page {
   display: flex;
-  margin: 3rem 5%;
+  padding: 3rem 5%;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  height: 30vh;
-  margin-bottom: 60vh;
+  height: fit-content;
+  padding-bottom: 60vh;
 }
 @media (min-width: 990px) {
   .landing-page {
     flex-direction: row;
-    margin-top: 15vh;
-    margin-bottom: 45vh;
+    padding-top: 15vh;
+    padding-bottom: 45vh;
   }
 }
 

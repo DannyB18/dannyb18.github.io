@@ -19,16 +19,16 @@ main {
 .landing-page {
   display: flex;
   // max-width: 1600px;
-  margin: 3rem 5%;
+  padding: 3rem 5%;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  height: 30vh;
-  margin-bottom: 60vh;
+  height: fit-content;
+  padding-bottom: 60vh;
   @include mq("lg") {
     flex-direction: row;
-    margin-top: 15vh;
-    margin-bottom: 45vh;
+    padding-top: 15vh;
+    padding-bottom: 45vh;
   }
 }
 
