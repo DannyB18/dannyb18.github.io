@@ -14,10 +14,6 @@ body {
   justify-content: center;
 }
 
-.hidden {
-  display: none;
-}
-
 main {
   max-width: 1400px;
   margin: auto;
@@ -31,13 +27,11 @@ main {
   height: 100vh;
   @include mq("lg") {
     justify-content: space-between;
-    // flex-direction: row;
-    // padding-top: 15vh;
     padding-bottom: 45vh;
   }
   @include mq("xxs") {
     justify-content: start;
-    padding: 1rem 5%;
+    height: 110vh;
   }
   @include mq("xxl") {
     flex-direction: row;
@@ -53,6 +47,10 @@ section {
   &:first-of-type {
     margin-top: 0;
   }
+}
+
+#home {
+  scroll-margin-top: 5rem;
 }
 
 .section-container {

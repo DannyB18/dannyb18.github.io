@@ -490,10 +490,6 @@ body {
   justify-content: center;
 }
 
-.hidden {
-  display: none;
-}
-
 main {
   max-width: 1400px;
   margin: auto;
@@ -515,7 +511,7 @@ main {
 @media (max-width: 374px) {
   .landing-page {
     justify-content: start;
-    padding: 1rem 5%;
+    height: 110vh;
   }
 }
 @media (min-width: 1140px) {
@@ -533,6 +529,10 @@ section {
 }
 section:first-of-type {
   margin-top: 0;
+}
+
+#home {
+  scroll-margin-top: 5rem;
 }
 
 .section-container {
