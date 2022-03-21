@@ -78,6 +78,7 @@ a {
       padding: 0.7rem 0;
     }
     &:last-child {
+      font-weight: bold;
       color: $color-dark;
       background-color: $color-5;
       &:hover {

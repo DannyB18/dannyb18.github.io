@@ -664,6 +664,7 @@ a {
   }
 }
 .nav-items a:last-child {
+  font-weight: bold;
   color: #101319;
   background-color: #ed217c;
 }
