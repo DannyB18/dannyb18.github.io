@@ -4,6 +4,10 @@ button {
   padding: 5px 0;
 }
 
+svg {
+  pointer-events: none;
+}
+
 .cta {
   width: 22rem;
   cursor: pointer;

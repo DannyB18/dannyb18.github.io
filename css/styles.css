@@ -529,6 +529,7 @@ section {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
+  scroll-margin-top: 5rem;
 }
 section:first-of-type {
   margin-top: 0;
@@ -586,6 +587,7 @@ nav {
   align-items: center;
   background-color: #101319;
   justify-content: center;
+  flex-direction: column;
 }
 @media (min-width: 730px) {
   .navbar {
@@ -597,10 +599,23 @@ nav {
   }
 }
 
+.nav-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+}
+@media (min-width: 730px) {
+  .nav-header {
+    justify-content: center;
+    padding: 0;
+  }
+}
+
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  margin-right: auto;
 }
 @media (min-width: 730px) {
   .logo {
@@ -623,28 +638,38 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
 }
 @media (min-width: 730px) {
   .nav-items {
     width: 100%;
+    max-height: fit-content !important;
   }
 }
 .nav-items a {
   font-size: 1.2rem;
   text-align: center;
   width: 100%;
-  padding: 0.7rem 0;
   border-bottom: 2px solid #282f3e;
   color: #afaab9;
   transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  padding: 1.5rem 0;
+}
+@media (min-width: 730px) {
+  .nav-items a {
+    padding: 0.7rem 0;
+  }
 }
 .nav-items a:last-child {
   color: #101319;
-  background-color: #06aed5;
+  background-color: #ed217c;
 }
 .nav-items a:last-child:hover {
-  color: #afaab9;
-  background-color: #ed217c;
+  color: #101319;
+  background-color: #06aed5;
 }
 .nav-items a:hover {
   color: #101319;
@@ -653,12 +678,10 @@ a {
 .nav-items a:first-child {
   border-top: 2px solid #282f3e;
 }
-.nav-items-expanded {
-  display: none;
-}
 @media (min-width: 730px) {
   .nav-items-expanded {
     display: flex;
+    margin-top: 0;
   }
 }
 
@@ -669,6 +692,16 @@ a {
 @media (min-width: 730px) {
   .menu {
     display: none;
+  }
+}
+.menu-button {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+@media (min-width: 730px) {
+  .menu-button {
+    padding: 0;
   }
 }
 
@@ -794,6 +827,10 @@ button {
   background-color: initial;
   border: none;
   padding: 5px 0;
+}
+
+svg {
+  pointer-events: none;
 }
 
 .cta {
