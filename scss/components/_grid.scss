@@ -1,34 +1,7 @@
 body {
   margin-bottom: 3rem;
-}
-
-// .headline {
-//   // margin-right: 10%;
-//   // max-width: fit-content;
-//   // @include mq("xs") {
-//   //   display: flex;
-//   //   flex-direction: column;
-//   // }
-// }
-
-main {
-  max-width: 1600px;
-  margin: auto;
-}
-
-.landing-page {
-  display: flex;
-  // max-width: 1600px;
-  padding: 3rem 5%;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  height: fit-content;
-  padding-bottom: 60vh;
-  @include mq("lg") {
-    flex-direction: row;
-    padding-top: 15vh;
-    padding-bottom: 45vh;
+  @include mq("sm-md") {
+    display: flex;
   }
 }
 
@@ -36,11 +9,49 @@ main {
   padding: 0 1rem;
 }
 
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.landing-page {
+  display: flex;
+  padding: 3rem 5%;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  @include mq("lg") {
+    justify-content: space-between;
+    // flex-direction: row;
+    // padding-top: 15vh;
+    padding-bottom: 45vh;
+  }
+  @include mq("xxs") {
+    justify-content: start;
+    padding: 1rem 5%;
+  }
+  @include mq("xxl") {
+    flex-direction: row;
+  }
+}
+
 section {
   position: relative;
   display: flex;
   justify-content: center;
   margin-top: 5rem;
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .section-container {
@@ -75,9 +86,4 @@ section {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-}
-
-.centered {
-  display: flex;
-  justify-content: center;
 }

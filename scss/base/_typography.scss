@@ -6,6 +6,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
   background-color: $color-1;
   color: $color-4;
+
   //   background: url("../../img/peakpx.jpg") no-repeat $color-1;
   //   background-blend-mode: multiply;
   //   padding: 0 1rem;
@@ -16,7 +17,12 @@ h1 {
   font-size: calc(4.5rem + 1.3vw);
   text-shadow: 5px 5px 3px $color-1-shadow;
   @include mq("xs") {
-    font-size: 2.9rem;
+    // font-size: 2.9rem;
+    font-size: calc(2.7rem + 1.3vw);
+  }
+  @include mq("xxs") {
+    // font-size: 2.7rem;
+    font-size: calc(2.5rem + 1.3vw);
   }
 }
 
@@ -44,6 +50,14 @@ nav h2 {
   }
 }
 
-.hidden {
-  display: none;
+#about {
+  margin: 0 5%;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+    color: $color-2;
+  }
 }

@@ -2,30 +2,80 @@ nav {
   font-size: 1.5rem;
   height: 3rem;
   align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .navbar {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  background-color: $color-dark;
   justify-content: center;
-  // background-color: $color-dark;
+  //
+  @include mq("sm-md") {
+    justify-content: start;
+    flex-direction: column;
+    height: 100vh;
+    width: 10rem;
+    padding: 0 !important;
+  }
+  //
 }
 
 .logo {
   font-size: 2rem;
   font-weight: bold;
   margin-right: auto;
+  @include mq("sm-md") {
+    margin-right: 0;
+    margin: 3rem 0 5rem;
+    font-size: calc(1.8rem + (0.8vw));
+  }
   a {
     color: $color-4;
   }
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .nav-items {
   display: flex;
+  //
+  flex-direction: column;
+  //
   align-items: center;
   justify-content: center;
-  a:not(:first-child) {
-    margin-left: 3rem;
+  @include mq("sm-md") {
+    width: 100%;
+  }
+  a {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    padding: 0.7rem 0;
+    border-bottom: 2px solid $color-1-light;
+    color: $color-2;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out;
+    &:last-child {
+      color: $color-dark;
+      background-color: $color-4;
+      &:hover {
+        color: $color-2;
+        background-color: $color-5;
+      }
+    }
+    &:hover {
+      color: $color-dark;
+      background-color: $color-4;
+    }
+  }
+  & a:first-child {
+    border-top: 2px solid $color-1-light;
   }
   &-expanded {
     display: none;
@@ -45,14 +95,4 @@ nav {
 
 .hamburger {
   stroke: $color-4;
-}
-
-a {
-  color: $color-2;
-  cursor: pointer;
-  text-decoration: none;
-  transition: color 0.3s ease-out;
-  &:hover {
-    color: $color-4;
-  }
 }
