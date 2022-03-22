@@ -475,7 +475,7 @@ nav h2 {
 body {
   margin-bottom: 3rem;
 }
-@media (min-width: 730px) {
+@media (min-width: 990px) {
   body {
     display: flex;
   }
@@ -562,7 +562,7 @@ section:first-of-type {
     grid-template-rows: repeat(3, 1fr);
   }
 }
-@media (min-width: 990px) {
+@media (min-width: 1295px) {
   .project-area {
     margin: 0 3rem;
     column-gap: 3rem;
@@ -589,7 +589,7 @@ nav {
   justify-content: center;
   flex-direction: column;
 }
-@media (min-width: 730px) {
+@media (min-width: 990px) {
   .navbar {
     justify-content: start;
     flex-direction: column;
@@ -606,7 +606,7 @@ nav {
   align-items: center;
   padding-left: 1rem;
 }
-@media (min-width: 730px) {
+@media (min-width: 990px) {
   .nav-header {
     justify-content: center;
     padding: 0;
@@ -617,7 +617,7 @@ nav {
   font-size: 2rem;
   font-weight: bold;
 }
-@media (min-width: 730px) {
+@media (min-width: 990px) {
   .logo {
     margin-right: 0;
     margin: 3rem 0 5rem;
@@ -643,7 +643,7 @@ a {
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
-@media (min-width: 730px) {
+@media (min-width: 990px) {
   .nav-items {
     width: 100%;
     max-height: fit-content !important;
@@ -658,7 +658,7 @@ a {
   transition: color 0.3s ease-out, background-color 0.3s ease-out;
   padding: 1.5rem 0;
 }
-@media (min-width: 730px) {
+@media (min-width: 990px) {
   .nav-items a {
     padding: 0.7rem 0;
   }
@@ -679,7 +679,7 @@ a {
 .nav-items a:first-child {
   border-top: 2px solid #282f3e;
 }
-@media (min-width: 730px) {
+@media (min-width: 990px) {
   .nav-items-expanded {
     display: flex;
     margin-top: 0;
@@ -690,7 +690,7 @@ a {
   width: 32px;
   height: 32px;
 }
-@media (min-width: 730px) {
+@media (min-width: 990px) {
   .menu {
     display: none;
   }
@@ -700,7 +700,7 @@ a {
   align-items: center;
   padding: 1rem;
 }
-@media (min-width: 730px) {
+@media (min-width: 990px) {
   .menu-button {
     padding: 0;
   }
@@ -708,6 +708,38 @@ a {
 
 .hamburger {
   stroke: #06aed5;
+}
+
+.socials {
+  max-height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+@media (min-width: 990px) {
+  .socials {
+    max-height: 3rem !important;
+  }
+}
+
+.github-link {
+  width: 1.7rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.github-svg {
+  width: 1.7rem;
+  max-height: 1.7rem;
+}
+
+.github-logo {
+  fill: #afaab9;
 }
 
 .card {
@@ -739,6 +771,7 @@ a {
   color: #afaab9;
 }
 .card-skill {
+  justify-items: flex-start;
   transition: box-shadow 0.3s ease-out;
 }
 .card-skill h3 {
@@ -817,6 +850,7 @@ a {
 
 .skill-icon {
   max-width: 10rem;
+  max-height: 160px;
   margin-top: 1rem;
 }
 

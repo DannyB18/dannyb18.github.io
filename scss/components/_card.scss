@@ -26,6 +26,7 @@
     color: $color-2;
   }
   &-skill {
+    justify-items: flex-start;
     transition: box-shadow 0.3s ease-out;
     h3 {
       color: $color-2;
@@ -124,6 +125,7 @@
 
 .skill-icon {
   max-width: 10rem;
+  max-height: 160px;
   margin-top: 1rem;
 }
 

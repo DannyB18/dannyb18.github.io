@@ -14,7 +14,7 @@ nav {
   background-color: $color-dark;
   justify-content: center;
   flex-direction: column;
-  @include mq("sm-md") {
+  @include mq("lg") {
     justify-content: start;
     flex-direction: column;
     height: 100vh;
@@ -29,7 +29,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-left: 1rem;
-  @include mq("sm-md") {
+  @include mq("lg") {
     justify-content: center;
     padding: 0;
   }
@@ -38,7 +38,7 @@ nav {
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  @include mq("sm-md") {
+  @include mq("lg") {
     margin-right: 0;
     margin: 3rem 0 5rem;
     font-size: calc(1.8rem + (0.8vw));
@@ -62,7 +62,7 @@ a {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
-  @include mq("sm-md") {
+  @include mq("lg") {
     width: 100%;
     max-height: fit-content !important;
   }
@@ -74,7 +74,7 @@ a {
     color: $color-2;
     transition: color 0.3s ease-out, background-color 0.3s ease-out;
     padding: 1.5rem 0;
-    @include mq("sm-md") {
+    @include mq("lg") {
       padding: 0.7rem 0;
     }
     &:last-child {
@@ -96,7 +96,7 @@ a {
   }
   &-expanded {
     // display: none;
-    @include mq("sm-md") {
+    @include mq("lg") {
       display: flex;
       margin-top: 0;
     }
@@ -106,14 +106,14 @@ a {
 .menu {
   width: 32px;
   height: 32px;
-  @include mq("sm-md") {
+  @include mq("lg") {
     display: none;
   }
   &-button {
     display: flex;
     align-items: center;
     padding: 1rem;
-    @include mq("sm-md") {
+    @include mq("lg") {
       padding: 0;
     }
   }
@@ -121,4 +121,33 @@ a {
 
 .hamburger {
   stroke: $color-4;
+}
+
+.socials {
+  max-height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  @include mq("lg") {
+    max-height: 3rem !important;
+  }
+}
+.github-link {
+  width: 1.7rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.github-svg {
+  width: 1.7rem;
+  max-height: 1.7rem;
+}
+
+.github-logo {
+  fill: $color-2;
 }

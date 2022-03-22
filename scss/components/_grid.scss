@@ -1,6 +1,6 @@
 body {
   margin-bottom: 3rem;
-  @include mq("sm-md") {
+  @include mq("lg") {
     display: flex;
   }
 }
@@ -78,7 +78,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
-  @include mq("lg") {
+  @include mq("xxxl") {
     margin: 0 3rem;
     column-gap: 3rem;
     row-gap: 3rem;
