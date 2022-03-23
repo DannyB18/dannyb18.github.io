@@ -723,6 +723,8 @@ a {
 @media (min-width: 990px) {
   .socials {
     max-height: 3rem !important;
+    margin-top: auto;
+    margin-bottom: 1rem;
   }
 }
 
