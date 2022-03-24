@@ -138,16 +138,19 @@ a {
     margin-bottom: 1rem;
   }
 }
-.github-link {
+
+.socials a {
   width: 1.7rem;
   height: 3rem;
   display: flex;
   align-items: center;
+  margin: 0 0.3rem;
 }
 
-.github-svg {
+.linkedin-svg {
   width: 1.7rem;
   max-height: 1.7rem;
+  fill: $color-2;
 }
 
 .github-logo {
