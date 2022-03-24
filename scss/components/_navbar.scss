@@ -96,7 +96,6 @@ a {
     border-top: 2px solid $color-1-light;
   }
   &-expanded {
-    // display: none;
     @include mq("lg") {
       display: flex;
       margin-top: 0;
