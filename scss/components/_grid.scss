@@ -71,7 +71,7 @@ section {
   display: grid;
   // grid-template-columns: repeat(autofit, minmax(308px, 540px));
   grid-template-columns: minmax(308px, auto);
-  grid-template-rows: repeat(6, 1fr);
+  grid-auto-rows: 1fr;
   column-gap: 2rem;
   row-gap: 2rem;
   padding-bottom: 3rem;
