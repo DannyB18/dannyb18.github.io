@@ -14,6 +14,7 @@ nav {
   background-color: $color-dark;
   justify-content: center;
   flex-direction: column;
+  @include shadow;
   @include mq("lg") {
     justify-content: start;
     flex-direction: column;
