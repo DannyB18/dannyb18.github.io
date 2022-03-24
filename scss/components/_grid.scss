@@ -29,6 +29,9 @@ main {
     justify-content: space-between;
     padding-bottom: 45vh;
   }
+  @include mq("sm") {
+    min-height: 700px;
+  }
   @include mq("xxs") {
     justify-content: start;
     height: 110vh;

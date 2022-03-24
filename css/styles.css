@@ -508,6 +508,11 @@ main {
     padding-bottom: 45vh;
   }
 }
+@media (min-width: 576px) {
+  .landing-page {
+    min-height: 700px;
+  }
+}
 @media (max-width: 374px) {
   .landing-page {
     justify-content: start;
@@ -739,6 +744,10 @@ a {
 .linkedin-svg {
   width: 1.7rem;
   max-height: 1.7rem;
+  fill: #afaab9;
+}
+
+.github-svg {
   fill: #afaab9;
 }
 
