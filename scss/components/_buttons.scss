@@ -55,7 +55,7 @@ svg {
   }
 }
 
-.call {
+.email {
   top: 5.1rem;
   z-index: -1;
   @include mq("xs") {
@@ -66,7 +66,7 @@ svg {
   }
 }
 
-.email {
+.call {
   top: 10rem;
   z-index: -2;
   @include mq("xs") {
@@ -77,7 +77,7 @@ svg {
   }
 }
 
-.show-call {
+.show-email {
   transition: top 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36),
     opacity 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36);
   top: 13rem;
@@ -91,23 +91,23 @@ svg {
   }
 }
 
-.show-email {
-  transition: top 0.3s 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36),
-    opacity 0.2s 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36);
-  top: 18.7rem;
-  opacity: 100;
-  z-index: 0;
-  @include mq("xs") {
-    top: 17.2rem;
-  }
-  @include mq("xxs") {
-    top: 15rem;
-  }
-}
+// .show-call {
+//   transition: top 0.3s 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36),
+//     opacity 0.2s 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36);
+//   top: 18.7rem;
+//   opacity: 100;
+//   z-index: 0;
+//   @include mq("xs") {
+//     top: 17.2rem;
+//   }
+//   @include mq("xxs") {
+//     top: 15rem;
+//   }
+// }
 
-.hide-call {
-  transition: top 0.2s 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36),
-    opacity 0.1s 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36);
+.hide-email {
+  transition: top 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36),
+    opacity 0.1s cubic-bezier(0.74, 0.74, 0.56, 1.36);
   top: 7.2rem;
   z-index: -1;
   opacity: 0;
@@ -119,16 +119,16 @@ svg {
   }
 }
 
-.hide-email {
-  transition: top 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36),
-    opacity 0.1s cubic-bezier(0.74, 0.74, 0.56, 1.36);
-  top: 13rem;
-  z-index: -2;
-  opacity: 0;
-  @include mq("xs") {
-    top: 12rem;
-  }
-  @include mq("xxs") {
-    top: 10rem;
-  }
-}
+// .hide-call {
+//   transition: top 0.2s 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36),
+//     opacity 0.1s 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36);
+//   top: 13rem;
+//   z-index: -2;
+//   opacity: 0;
+//   @include mq("xs") {
+//     top: 12rem;
+//   }
+//   @include mq("xxs") {
+//     top: 10rem;
+//   }
+// }

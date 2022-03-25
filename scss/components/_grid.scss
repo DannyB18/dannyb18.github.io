@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin-bottom: 3rem;
   @include mq("lg") {
@@ -25,16 +29,21 @@ main {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  margin-top: 5rem;
   @include mq("lg") {
+    margin-top: 0;
     justify-content: space-between;
     padding-bottom: 45vh;
   }
   @include mq("sm") {
     min-height: 700px;
   }
+  @include mq("xs") {
+  }
   @include mq("xxs") {
     justify-content: start;
     height: 110vh;
+    margin-top: 0;
   }
   @include mq("xxl") {
     flex-direction: row;
