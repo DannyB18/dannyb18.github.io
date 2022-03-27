@@ -14,16 +14,16 @@ landingPage.addEventListener('click', (e) => {
         if (contactButton.classList.contains("inactive")) {
             emailButton.classList.add('show-email');
             emailButton.classList.remove('hide-email');
-            // emailButton.classList.add('show-email');
-            // emailButton.classList.remove('hide-email');
+            // callButton.classList.add('show-call');
+            // callButton.classList.remove('hide-call');
             contactButton.classList.remove('inactive');
             contactButton.classList.add("active");
 
         } else if (contactButton.classList.contains("active")) {
             emailButton.classList.add('hide-email');
             emailButton.classList.remove('show-email');
-            // emailButton.classList.add('hide-email');
-            // emailButton.classList.remove('show-email');
+            // callButton.classList.add('hide-call');
+            // callButton.classList.remove('show-call');
             contactButton.classList.remove('active');
             contactButton.classList.add("inactive");
         }
