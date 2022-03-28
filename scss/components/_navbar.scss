@@ -67,6 +67,12 @@ a {
     width: 100%;
     max-height: fit-content !important;
   }
+  &-expanded {
+    @include mq("lg") {
+      display: flex;
+      margin-top: 0;
+    }
+  }
   a {
     font-size: 1.2rem;
     text-align: center;
@@ -94,12 +100,6 @@ a {
   }
   & a:first-child {
     border-top: 2px solid $color-1-light;
-  }
-  &-expanded {
-    @include mq("lg") {
-      display: flex;
-      margin-top: 0;
-    }
   }
 }
 
