@@ -408,10 +408,6 @@ ul {
   list-style: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Nunito Sans", sans-serif;
   background-color: #202531;
@@ -588,7 +584,6 @@ nav {
   font-size: 1.5rem;
   height: 3rem;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -662,6 +657,12 @@ a {
     max-height: fit-content !important;
   }
 }
+@media (min-width: 990px) {
+  .nav-items-expanded {
+    display: flex;
+    margin-top: 0;
+  }
+}
 .nav-items a {
   font-size: 1.2rem;
   text-align: center;
@@ -691,12 +692,6 @@ a {
 }
 .nav-items a:first-child {
   border-top: 2px solid #282f3e;
-}
-@media (min-width: 990px) {
-  .nav-items-expanded {
-    display: flex;
-    margin-top: 0;
-  }
 }
 
 .menu {
@@ -749,17 +744,11 @@ a {
   margin: 0 0.5rem;
 }
 
+.github-logo,
+.github-svg,
 .linkedin-svg {
   width: 1.7rem;
   max-height: 1.7rem;
-  fill: #afaab9;
-}
-
-.github-svg {
-  fill: #afaab9;
-}
-
-.github-logo {
   fill: #afaab9;
 }
 
@@ -788,7 +777,7 @@ a {
   margin: 0 1rem;
 }
 .card:hover {
-  transform: scale(107%);
+  transform: scale(1.07);
   color: #afaab9;
 }
 .card-skill {
@@ -973,7 +962,7 @@ svg {
 .show-email {
   transition: top 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36), opacity 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36);
   top: 13rem;
-  opacity: 100;
+  opacity: 1;
   z-index: 0;
 }
 @media (max-width: 575px) {

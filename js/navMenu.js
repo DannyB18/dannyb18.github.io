@@ -1,6 +1,5 @@
 const navItems = document.querySelector(".nav-items");
 const navbar = document.querySelector(".navbar");
-const navHeader = document.querySelector(".nav-header");
 const socials = document.querySelector(".socials");
 
 navbar.addEventListener("click", (e) => {
@@ -14,12 +13,12 @@ navbar.addEventListener("click", (e) => {
             navItems.style.maxHeight = "0px";
             socials.style.maxHeight = "0px";
             navItems.classList.remove("active");
-            navItems.classList.add("inactive")
+            navItems.classList.add("inactive");
         }
     } else if (e.target.tagName === "A" && navItems.classList.contains("active")) {
             navItems.style.maxHeight = "0px";
             socials.style.maxHeight = "0px";
             navItems.classList.remove("active");
-            navItems.classList.add("inactive")
+            navItems.classList.add("inactive");
     }
 });

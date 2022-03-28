@@ -81,7 +81,7 @@ svg {
   transition: top 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36),
     opacity 0.2s cubic-bezier(0.74, 0.74, 0.56, 1.36);
   top: 13rem;
-  opacity: 100;
+  opacity: 1;
   z-index: 0;
   @include mq("xs") {
     top: 12rem;
@@ -95,7 +95,7 @@ svg {
 //   transition: top 0.3s 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36),
 //     opacity 0.2s 0.3s cubic-bezier(0.74, 0.74, 0.56, 1.36);
 //   top: 18.7rem;
-//   opacity: 100;
+//   opacity: 1;
 //   z-index: 0;
 //   @include mq("xs") {
 //     top: 17.2rem;
